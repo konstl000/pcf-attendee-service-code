@@ -1,10 +1,9 @@
 applications:
-- name: attendee
-  path: target/attendee-1.0.jar
+- name: attendee  
   random-route: true
 #  host: attendee-jl
   memory: 768M
   instances: 1
-  buildpack: java_buildpack
+  buildpack: java_buildpack_offline
   services:
   - attendee-mysql
